@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Editor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="editor-container">
+        <div class="toolsbar">
+            <button onclick="format('bold')"><b>B</b></button>
+            <button onclick="format('italic')"><i>I</i></button>
+            <button onclick="format('underline')"><u>U</u></button>
+            <button onclick="saveText()">Save</button>
+            <button onclick="loadText()">Load</button>
+            <button onclick="clearText()">Clear</button>
+        </div>
+        <div id="editor" contenteditable="true" class="editor-area">
+            Write here...
+        </div>
+    </div>
+    <script src="Text Editor.js"></script>
+</body>
+</html>
