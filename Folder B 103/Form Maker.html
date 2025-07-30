@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Form Maker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h2>Form Elements</h2>
+            <div class="draggable" draggable="true" data-type="text">
+                <label>Text Input</label>
+                <input type="text" placeholder="Text...">
+            </div>
+            <div class="draggable" draggable="true" data-type="email">
+                <label>Email Input</label>
+                <input type="email" placeholder="Email@example.com">
+            </div>
+            <div class="draggable" draggable="true" data-type="password">
+                <label>Password Input</label>
+                <input type="password" placeholder="Password">
+            </div>
+            <div class="draggable" draggable="true" data-type="number">
+                <label>Number Input</label>
+                <input type="number" placeholder="Number">
+            </div>
+            <div class="draggable" draggable="true" data-type="select">
+                <label>Select Input</label>
+                <select>
+                    <option value="">Select an Option</option>
+                    <option value="option1">Option 1</option>
+                    <option value="option2">Option 2</option>
+                </select>
+            </div>
+            <div class="draggable" draggable="true" data-type="checkbox">
+                <label>Checkbox Input</label>
+                <div><input type="checkbox"> Checkbox</div>
+            </div>
+            <div class="draggable" draggable="true" data-type="radio">
+                <label>Radio Button</label>
+                <div><input type="radio" name="radio-group-preview" value="optionA"> Option A</div>
+                <div><input type="radio" name="radio-group-preview" value="optionB"> Option B</div>
+            </div>
+            <div class="draggable" draggable="true" data-type="textarea">
+                <label>Text Area</label>
+                <textarea placeholder="Your message"></textarea>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <h1>Drag and Drop Elements Here</h1>
+            <div class="drop-zone" id="form-builder">
+            </div>
+            <button id="generate-html">Generate HTML</button>
+            <textarea id="generated-html-output" readonly
+            placeholder="Generated HTML will appear here..."></textarea>
+        </div>
+    </div>
+    <script src="Form Maker.js"></script>
+</body>
+</html>
+<!--Código corrigido pela IA Gemini, corrigido a estrutura do div.draggable para radio e textarea, corrigido a estrutura e aninhamento geral e adicionado corretamente os tipos de data-type-->
